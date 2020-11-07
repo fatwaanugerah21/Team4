@@ -1,0 +1,209 @@
+.header-container {
+   display: flex;
+   position: relative;
+   height: 50%;
+}
+
+
+
+#header-image {
+   width: 100%;
+   height: 100%;
+   z-index: -2;
+   filter: brightness(40%);
+   position: fixed;
+}
+
+.cut-corner {
+   position: absolute;
+   border-left: 120px solid antiquewhite;
+   border-top: 80px solid transparent;
+   bottom: 0;
+   left: 0;
+}
+
+.crown-logo {
+   padding: 20px;
+   z-index: 0;
+   background-color: rgba(255, 255, 255, 0.5);
+   height: 140;
+   position: fixed;
+   left: 21%;
+   top: 5%;
+}
+
+.crown-logo:hover {
+   transform: scale(1.1);
+   transition-duration: .5s;
+}
+
+
+.our-team-link {
+   position: fixed;
+   top: 35%;
+   z-index: 0;
+   left: 35%;
+   text-align: center;
+}
+
+.main {
+   z-index: 1;
+   height: 200%;
+   box-sizing: border-box;
+   display: flex;
+   background-color: white;
+   justify-content: center;
+}
+
+.cut-corner2 {
+   position: relative;
+   bottom: 0;
+   right: 0;
+   height: 80px;
+   border-bottom: 80px solid antiquewhite;
+   border-right: 80px solid transparent;
+   z-index: 1;
+}
+
+main {
+   background-color: antiquewhite;
+}
+
+.other-website-container {
+   position: relative;
+   padding: 5% 2%;
+   background-color: white;
+}
+
+main .other-website {
+   align-items: center;
+   border: none;
+   margin-bottom: 2%;
+}
+
+.other-website-content h2 {
+   margin-top: 2%;
+   margin-bottom: 3%;
+   text-align: center;
+}
+
+.content-paragraph {
+   padding: 5%;
+   color: red;
+}
+
+.other-website-image {
+   background-position: center;
+   height: 300px;
+   width: 300px;
+   margin: 30px 60px;
+}
+
+
+.meet-our-team {
+   padding: 4%;
+   text-align: center;
+   color: white;
+}
+
+.member-picture-container {
+   border-radius: 0;
+   margin: 10px 100px;
+   display: flex;
+   position: relative;
+   padding-bottom: 5%;
+}
+
+.member-picture-container:hover {
+   transform: scale(1.2);
+   transition-duration: 0.5s;
+}
+
+
+.member-picture {
+   height: 15rem;
+   width: 100%;
+   filter: brightness(40%);
+}
+
+.team-list {
+   background-color: rgb(26, 24, 24);
+   position: relative;
+}
+
+.member-name {
+   order: 500;
+   position: absolute;
+   top: 40%;
+   left: 36%;
+   font-size: 24pt;
+   font-family: 'Times New Roman', Times, serif;
+   color: white;
+}
+
+
+#our-social-media {
+   padding: 3%;
+   text-align: center;
+   color: white;
+}
+
+.social-media {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.social-media-icon {
+   margin: 2% 6%;
+}
+
+@media (min-width: 768px) {
+   .member-name {
+      top: 32%;
+   }
+
+   .other-website {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+   }
+
+   .header-container {
+      height: 80%;
+   }
+
+   .header-container h1 {
+      font-size: 100px;
+      margin-top: 50px;
+      position: absolute;
+      text-align: center;
+   }
+
+   .our-team-link {
+      position: fixed;
+      z-index: 0;
+      top: 60%;
+      left: 40%;
+      width: 20%;
+   }
+
+   .separator {
+      width: 100%;
+   }
+
+   .crown-logo {
+      height: 240px;
+      left: 33%;
+   }
+
+
+
+   .member-picture-container {
+      position: relative;
+       margin: 10px 20px;
+      left: 11.5%;
+   }
+}
